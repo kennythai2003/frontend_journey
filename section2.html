@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>the basic language of the web: html</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>the code magazine</h1>
       <nav>
         <a href="index.html"> blog</a>
@@ -16,7 +17,7 @@
     </header>
     <article>
       <header>
-        <p>posted by <strong>kenny thai</strong> on sept 3 2023</p>
+        <p id="author">posted by <strong>kenny thai</strong> on sept 3 2023</p>
 
         <img src="/img/post-img.jpg" alt="w image" width="500" height="200" />
         <p><a href="index.html">kenny's website</a></p>
@@ -74,7 +75,7 @@
     </article>
     <aside>
       <h4><strong>related posts</strong></h4>
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="img/related-1.jpg"
@@ -82,7 +83,7 @@
             width="75"
             height="75"
           /><a href="#">how to learn web dev</a>
-          <p>by kenny</p>
+          <p class="related-author">by kenny</p>
         </li>
         <li>
           <img
@@ -91,7 +92,7 @@
             width="75"
             height="75"
           /><a href="#">how to learn web dev</a>
-          <p>by kenny</p>
+          <p class="related-author">by toony</p>
         </li>
         <li>
           <img
@@ -100,10 +101,12 @@
             width="75"
             height="75"
           /><a href="#">how to learn web dev</a>
-          <p>by kenny</p>
+          <p class="related-author">by pihlpi</p>
         </li>
       </ul>
     </aside>
-    <footer>Copyright &copy; 2023 by kenny thai</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2023 by kenny thai</p>
+    </footer>
   </body>
 </html>
